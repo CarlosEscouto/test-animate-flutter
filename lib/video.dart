@@ -33,7 +33,7 @@ class _VideoState extends State<Video> {
           Center(
             child: _controller.value.initialized
             ? Container(
-              width: 500, // Certo é usar MediaQuery
+              width: MediaQuery.of(context).size.width,
               child: AspectRatio(
                 aspectRatio: _controller.value.aspectRatio,
                 child: VideoPlayer(_controller),
@@ -58,7 +58,7 @@ class _VideoState extends State<Video> {
                 textColor: Color.fromRGBO(167, 1, 4, 1),
                 color: Color.fromRGBO(255, 255, 255, 1),
                 shape: StadiumBorder(),
-                minWidth: 350, // Certo é usar MediaQuery
+                minWidth: MediaQuery.of(context).size.width - 40,
               ),
               padding: EdgeInsets.fromLTRB(0, 500, 0, 0),
             )

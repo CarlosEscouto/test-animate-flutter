@@ -9,15 +9,11 @@ class Flare extends StatefulWidget {
 class _FlareState extends State<Flare> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      alignment: Alignment.bottomCenter,
-      child: FlareActor(
-        "assets/navbar.flr",
-        alignment:Alignment.center,
-        fit:BoxFit.contain,
-        animation:"3_1",
-      ),
+    return FlareActor(
+      "assets/navbar.flr",
+      alignment:Alignment.bottomCenter,
+      fit:BoxFit.contain,
+      animation:"0",
     );
   }
 }
