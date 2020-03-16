@@ -49,6 +49,8 @@ flutter:
     - assets/fastbuy-delivery-1.flr
     - assets/flamengo.mp4
     - assets/navbar.flr
+    - assets/SequencedLoader.flr
+
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
